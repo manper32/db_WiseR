@@ -4,6 +4,8 @@ services:
   db:
 #   Use the Docker Image postgres. This will pull the alpine release.
     image: "postgres:alpine"
+#   Swap memory
+    shm_size: 16gb 
 #   Give the container the name my_postgres. You can changes to something else.
     container_name: "db_WiseR"
 #   indicate how many connections will acept
